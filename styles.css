@@ -8,7 +8,6 @@
 
 body {
   font-family: "Tajawal", sans-serif;
-  font-size: 10px;
 }
 
 /* Navbar styling */
@@ -18,7 +17,6 @@ nav {
   align-items: center;
   height: 10vh;
   max-width: 1366px;
-  background-color: #ffffff;
   margin: 0 auto;
   padding: 0 5rem;
 }
@@ -31,9 +29,11 @@ nav .logo {
 
 nav .logo i {
   color: #6e0aef;
-  padding-left: 0.5rem;
+  padding-left: 0.75rem;
 }
-
+nav .bars-menu {
+  display: none;
+}
 nav .logo h4 {
   font-family: "Lalezar", cursive;
 }
@@ -59,12 +59,12 @@ nav .nav-link:hover {
 
 /* Heor styling */
 .hero {
-  height: 70vh;
   background-color: #f8f7fc;
 }
 
 .hero-section {
   max-width: 1366px;
+  height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +75,6 @@ nav .nav-link:hover {
 .hero-section .content {
   display: flex;
   flex-direction: column;
-  padding-left: 5rem;
 }
 
 .hero-section .content h4 {
@@ -85,7 +84,7 @@ nav .nav-link:hover {
 }
 
 .hero-section .content h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 1rem;
 }
 
@@ -124,7 +123,7 @@ nav .nav-link:hover {
 
 /* Features section */
 section.features {
-  padding: 5rem 0;
+  padding: 2rem 0;
   background-color: #f8f7fc;
 }
 
@@ -132,6 +131,9 @@ section.features .features-section {
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .features-section h4 {
@@ -153,11 +155,11 @@ section.features .features-section {
   padding: 2rem;
   max-width: 17rem;
   border-radius: 1rem;
+  margin: 1rem 1rem;
 }
 
 .features-section .qualities .quality:hover {
   border: 2px solid #6e0aef;
-  cursor: pointer;
 }
 
 .qualities .quality i {
@@ -231,13 +233,14 @@ section.features .features-section {
 /* Footer */
 footer {
   background-color: #f8f7fc;
-  height: 10vh;
+  height: 15vh;
   margin-top: 5rem;
   padding: 2rem 0;
 }
 
 .footer-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   max-width: 1366px;
   margin: 0 auto;
@@ -246,13 +249,12 @@ footer {
 
 .footer-section p {
   font-size: 1.2rem;
-  flex: 1;
+  margin-bottom: 1rem;
 }
 
 .footer-section .socials {
-  flex: 1;
+  margin-bottom: 1rem;
 }
-
 .footer-section .socials i {
   padding: 0 0.5rem;
   font-size: 1.6rem;
@@ -261,4 +263,93 @@ footer {
 .footer-section .socials i:hover {
   color: #6e0aef;
   cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  * {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 1175px) {
+  * {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  * {
+    text-align: center;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero-section {
+    align-items: center;
+    padding: 2rem 0rem;
+    width: 50%;
+  }
+  .hero .btn {
+    align-self: center;
+  }
+  .hero .content {
+    margin-top: 2rem;
+  }
+  .features-section .qualities {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section.features .features-section {
+    align-items: center;
+  }
+  .phones-section h4 {
+    align-self: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero-section .content h1 {
+    font-size: 2rem;
+  }
+  .phones-section {
+    align-items: center;
+  }
+  .phones-section .phones {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 504px) {
+  .phones-section .phones {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  nav .bars-menu {
+    display: block;
+    font-size: 3rem;
+  }
+  nav .nav-items {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #4e547e;
+    padding: 2rem 0;
+  }
+  nav .nav-items .nav-item {
+    margin: 1rem 0;
+  }
+  nav .nav-items .nav-item a {
+    color: white;
+  }
+  nav .nav-items.active {
+    display: flex;
+  }
 }
