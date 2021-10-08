@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  font-size: 10px;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  max-width: 1366px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+nav .logo {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+
+nav .logo i {
+  color: #6e0aef;
+  padding-left: 0.5rem;
+}
+
+nav .logo h4 {
+  font-family: "Lalezar", cursive;
+}
+
+nav .nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav-items .nav-item {
+  padding: 0 1rem;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: #4e547e;
+  font-size: 1.4rem;
+}
+
+nav .nav-link:hover {
+  color: #6e0aef;
+}
+
+/* Heor styling */
+.hero {
+  height: 70vh;
+  background-color: #f8f7fc;
+}
+
+.hero-section {
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.hero-section .content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+}
+
+.hero-section .content h4 {
+  color: #6e0aef;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .content p {
+  color: rgb(29, 29, 29);
+  font-size: 1.4rem;
+}
+
+.hero-section .content p span.purple {
+  color: #6e0aef;
+}
+
+.hero-section form {
+  display: flex;
+}
+.btn {
+  width: 10rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  background-color: #6e0aef;
+}
+
+.btn:hover {
+  background-color: #7d22f3;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+/* Features section */
+section.features {
+  padding: 5rem 0;
+  background-color: #f8f7fc;
+}
+
+section.features .features-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.features-section h4 {
+  color: #6e0aef;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.features-section .qualities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-section .qualities .quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 17rem;
+  border-radius: 1rem;
+}
+
+.features-section .qualities .quality:hover {
+  border: 2px solid #6e0aef;
+  cursor: pointer;
+}
+
+.qualities .quality i {
+  font-size: 2rem;
+  color: #6e0aef;
+  margin-bottom: 1rem;
+}
+
+.qualities .quality h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.qualities .quality p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #4e547e;
+}
+
+/*  Phones section */
+.newest-phones {
+  padding-top: 5rem;
+}
+
+.newest-phones .phones-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.phones-section h4 {
+  color: #6e0aef;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.phones-section .phones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+}
+
+.phones .phone {
+  margin: 2rem 0;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone img {
+  margin-bottom: 1rem;
+}
+
+.phone img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.phone h3 {
+  font-size: 1.6rem;
+}
+
+.phones-section button {
+  width: 15rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f7fc;
+  height: 10vh;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.footer-section .socials {
+  flex: 1;
+}
+
+.footer-section .socials i {
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.footer-section .socials i:hover {
+  color: #6e0aef;
+  cursor: pointer;
+}
