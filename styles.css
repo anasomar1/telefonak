@@ -64,7 +64,7 @@ nav .nav-link:hover {
 
 .hero-section {
   max-width: 1366px;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -274,7 +274,7 @@ footer {
 
 @media (max-width: 1175px) {
   * {
-    font-size: 75%;
+    font-size: 80%;
   }
 }
 
@@ -340,7 +340,7 @@ footer {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #4e547e;
+    background-color: #7d22f3;
     padding: 2rem 0;
   }
   nav .nav-items .nav-item {
